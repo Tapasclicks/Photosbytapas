@@ -26,6 +26,12 @@ header {
   border-radius: 8px;
 }
 
+.instagram-container {
+  display: flex;
+  justify-content: center;
+  padding: 30px 0;
+}
+
 footer {
   text-align: center;
   padding: 20px;
