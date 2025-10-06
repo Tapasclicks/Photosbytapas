@@ -1,3 +1,4 @@
+/* Reset and base styles */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -6,18 +7,65 @@ body {
   color: #333;
 }
 
-header {
-  background-color: #111;
-  color: white;
-  text-align: center;
-  padding: 40px 20px;
+/* Hero Section */
+.hero {
+  height: 100vh;
+  background: url('images/hero.jpg') center center/cover no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5); /* transparent dark overlay */
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.hero-title {
+  font-family: 'Butterfly Kids', cursive;
+  font-size: 72px;
+  color: #fff;
+  margin: 0;
+}
+
+.hero-subtitle {
+  color: #ddd;
+  font-size: 20px;
+  margin: 10px 0 30px;
+}
+
+/* Instagram Icon */
+.ig-icon {
+  font-size: 36px;
+  color: #fff;
+  text-decoration: none;
+  margin-top: 10px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.ig-icon:hover {
+  color: #f09433; /* subtle Insta orange tint */
+  transform: scale(1.1);
+}
+
+/* Gallery section */
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 10px;
-  padding: 20px;
+  padding: 40px 20px;
+  background-color: #fff;
 }
 
 .gallery img {
@@ -26,12 +74,15 @@ header {
   border-radius: 8px;
 }
 
+/* Instagram Embed */
 .instagram-container {
   display: flex;
   justify-content: center;
   padding: 30px 0;
+  background-color: #fff;
 }
 
+/* Footer */
 footer {
   text-align: center;
   padding: 20px;
