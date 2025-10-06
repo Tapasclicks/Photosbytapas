@@ -5,37 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>PHOTOSBYTAPAS</title>
 
-  <!-- Link to CSS -->
   <link rel="stylesheet" href="style.css" />
 
-  <!-- Google Font for script title -->
-  <link href="https://fonts.googleapis.com/css2?family=Butterfly+Kids&display=swap" rel="stylesheet">
+  <!-- Script font (placeholder) -->
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
 
   <!-- Font Awesome for Instagram icon -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
-  <!-- Hero Section -->
+  <!-- Hero full screen background -->
   <div class="hero">
     <div class="overlay">
       <h1 class="hero-title">PHOTOSBYTAPAS</h1>
-      <p class="hero-subtitle">Moments through my eyes.</p>
-
-      <!-- Instagram Icon with your actual handle -->
-      <a href="https://instagram.com/tapasclicks" target="_blank" class="ig-icon" aria-label="Instagram">
-        <i class="fab fa-instagram"></i>
-      </a>
     </div>
   </div>
 
-  <!-- Main Content -->
+  <!-- SnapWidget Instagram Embed -->
   <main>
-    <section class="gallery">
-      <p>Gallery coming soon!</p>
-    </section>
-
-    <!-- Instagram Embed -->
     <script src="https://snapwidget.com/js/snapwidget.js"></script>
     <div class="instagram-container">
       <iframe src="https://snapwidget.com/embed/1109547"
@@ -43,15 +31,21 @@
               allowtransparency="true"
               frameborder="0"
               scrolling="yes"
-              style="border:none; overflow:hidden; width:50%;"
+              style="border:none; overflow:hidden; width:80%; max-width:600px;"
               title="Posts from Instagram">
       </iframe>
     </div>
   </main>
 
-  <!-- Footer -->
+  <!-- Footer with Instagram icon next to text -->
   <footer>
-    <p>© 2025 PHOTOSBYTAPAS</p>
+    <p>
+      © 2025 PHOTOSBYTAPAS 
+      <a href="https://instagram.com/tapasclicks" target="_blank" class="footer-ig" aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </p>
   </footer>
+
 </body>
 </html>
