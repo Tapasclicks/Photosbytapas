@@ -1,4 +1,4 @@
-/* Load your custom font */
+/* Load custom font */
 @font-face {
   font-family: 'BeautifullyDelicious';
   src: url('fonts/beautifully-delicious.ttf') format('truetype');
@@ -85,7 +85,7 @@ body {
 }
 
 /* =====================
-   INSTAGRAM SECTION
+   INSTAGRAM WIDGET
 ===================== */
 .instagram-container {
   display: flex;
