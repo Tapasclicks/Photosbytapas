@@ -10,7 +10,7 @@
 </head>
 <body>
 
-  <!-- Navigation -->
+  <!-- Navigation (outside hero so it stays on top of page) -->
   <nav class="navbar">
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
@@ -20,14 +20,37 @@
     </ul>
   </nav>
 
-  <!-- Hero section -->
+  <!-- Hero Section -->
   <div class="hero">
     <div class="overlay">
       <h1 class="hero-title">PHOTOSBYTAPAS</h1>
     </div>
   </div>
 
-  <!-- Instagram Feed -->
+  <!-- Instagram Widget -->
   <main>
     <script src="https://snapwidget.com/js/snapwidget.js"></script>
-    <div cla
+    <div class="instagram-container">
+      <iframe src="https://snapwidget.com/embed/1109547"
+              class="snapwidget-widget"
+              allowtransparency="true"
+              frameborder="0"
+              scrolling="yes"
+              style="border:none; overflow:hidden; width:80%; max-width:600px;"
+              title="Posts from Instagram">
+      </iframe>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>
+      © 2025 PHOTOSBYTAPAS
+      <a href="https://instagram.com/tapasclicks" target="_blank" class="footer-ig" aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </p>
+  </footer>
+
+</body>
+</html>
