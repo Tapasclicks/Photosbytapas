@@ -16,64 +16,35 @@ body {
   color: #333;
 }
 
-/* Hero section with full screen background */
-.hero {
-  height: 100vh;
-  background: url('images/hero.png') center center/cover no-repeat;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.overlay {
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0,0,0,0.5);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.hero-title {
-  font-family: 'BeautifullyDelicious', cursive;
-  font-size: 64px;
-  color: white;
-  z-index: 1;
-  padding: 0 20px;
-  user-select: none;
-}
-
-/* Instagram container styling */
-.instagram-container {
-  display: flex;
-  justify-content: center;
-  padding: 40px 20px;
+/* Navigation bar */
+.navbar {
   background-color: #fff;
+  padding: 15px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Footer */
-footer {
-  text-align: center;
-  padding: 20px;
-  background-color: #222;
-  color: white;
-  font-size: 16px;
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
 }
 
-/* Instagram icon in footer */
-.footer-ig {
-  color: white;
-  margin-left: 10px;
-  font-size: 20px;
+.nav-links li a {
   text-decoration: none;
-  transition: color 0.3s ease, transform 0.3s ease;
+  color: #333;
+  font-size: 18px;
+  font-weight: 600;
+  transition: color 0.3s ease;
 }
 
-.footer-ig:hover {
-  color: #f09433;
-  transform: scale(1.2);
+.nav-links li a:hover {
+  color: #f09433; /* Instagram-inspired color */
 }
+
+/* Hero section with full screen bac*
