@@ -10,21 +10,26 @@
 </head>
 <body>
 
-  <!-- Navigation (outside hero so it stays on top of page) -->
-  <nav class="navbar">
-    <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#blog">Blog</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li><a href="#getintouch">Get in Touch</a></li>
-    </ul>
-  </nav>
+  <!-- Sidebar Navigation -->
+  <div class="sidebar" id="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#about">About</a>
+    <a href="#blog">Blog</a>
+    <a href="#contact">Contact</a>
+    <a href="#getintouch">Get in Touch</a>
+  </div>
+
+  <!-- Top bar -->
+  <div class="top-bar">
+    <h1 class="logo">PHOTOSBYTAPAS</h1>
+    <span class="hamburger" onclick="openNav()">
+      <i class="fas fa-bars"></i>
+    </span>
+  </div>
 
   <!-- Hero Section -->
   <div class="hero">
-    <div class="overlay">
-      <h1 class="hero-title">PHOTOSBYTAPAS</h1>
-    </div>
+    <div class="overlay"></div>
   </div>
 
   <!-- Instagram Widget -->
@@ -51,6 +56,17 @@
       </a>
     </p>
   </footer>
+
+  <!-- JS for Sidebar -->
+  <script>
+    function openNav() {
+      document.getElementById("sidebar").style.width = "250px";
+    }
+
+    function closeNav() {
+      document.getElementById("sidebar").style.width = "0";
+    }
+  </script>
 
 </body>
 </html>
